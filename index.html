@@ -1,1 +1,10 @@
-<title>focus mode</title><link href="favicon.ico" rel="icon"><meta name="apple-mobile-web-app-capable" content="yes"></head><body style="background:#323639;cursor:none" onclick="document.documentElement.requestFullscreen()">
+<html>
+	<head>
+		<title>focus mode</title>
+		<link href="favicon.ico" rel="icon">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<style>[hide-cursor] { cursor: none }</style>
+	</head>
+	<body style="background: #323639" onclick="document.documentElement.requestFullscreen()"></body>
+	<script>document.addEventListener("keyup", ({ key }) => { if (key == "c") { document.documentElement.toggleAttribute("hide-cursor") } })</script>
+</html>
